@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.navbar{
+    height: 75px;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 5px;
+    padding: 3px 2px;
+    background-color:coral;
+}
+
+li{
+    border: 1px solid rgb(42, 239, 253);
+    padding: 4px 5px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 600px) {
+    /* Apply the following styles if maximum width is 600px or width <= 600px */
+    ul{
+       flex-direction: column; 
+    }
+    span{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+h2,.navlink, #custom{
+    color: blue;
+}
+
+nav span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+}
+
+li > span{
+    /* Those span tags which are immediate child of li.
+    It will only pick immediate span child present in the li */
+    text-decoration: underline;
+}
+
+h1 * span{
+    color: black;
+}
+
+#sample::first-line{
+    text-decoration: line-through;
+    background-color: yellow;
+}
+
+#sample::first-letter{
+    background-color: plum;
+    font-size: x-large;
+}
+
+input::placeholder{
+    background-color: yellow;
+}
